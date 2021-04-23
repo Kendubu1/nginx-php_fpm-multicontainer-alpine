@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  php-fpm:
+    build:
+      context: ./php-fpm
+    container_name: php-fpm
+    volumes:
+      - ./content:/var/www/app
+
+  nginx:
+    build:
+      context: ./nginx
+    container_name: nginx
+    volumes:
+      - ./content:/var/www/app
+    depends_on:
+      - php-fpm
+    ports:
+      - "2020:80"
+      - "2222:2222"

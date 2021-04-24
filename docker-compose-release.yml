@@ -1,13 +1,13 @@
 version: '3.8'
 services:
   php-fpm:
-    image: kedubuis/php-fpm:01
+    image: kedubuis/php-fpm:001
     volumes:
       # Mounted storage enabled with Name as "path" & Mount path as "/var/www" 
       - path:/var/www/app
 
   nginx:     
-    image: kedubuis/nginx:01
+    image: kedubuis/nginx:001
     ports:
       - "2020:80"
       - "2222:2222"

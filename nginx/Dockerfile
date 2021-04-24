@@ -27,3 +27,4 @@ COPY sshd_config /etc/ssh/
 COPY init.sh /tmp
 RUN chmod 755 /tmp/init.sh
 
+ENTRYPOINT ["/tmp/init.sh"]

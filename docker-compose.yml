@@ -1,5 +1,4 @@
 version: '3.8'
-
 services:
   php-fpm:
     build:
@@ -7,7 +6,6 @@ services:
     container_name: php-fpm
     volumes:
       - ./content:/var/www/app
-
   nginx:
     build:
       context: ./nginx

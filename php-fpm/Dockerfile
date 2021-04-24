@@ -1,6 +1,5 @@
 # php-fpm
 FROM php:fpm-alpine
-
+EXPOSE 9000
 CMD ["php-fpm"]
 
-EXPOSE 9000

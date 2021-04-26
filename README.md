@@ -6,9 +6,9 @@ Docker Compose files included are used for building/deploying locally on port 20
 - https://hub.docker.com/_/php
 - https://hub.docker.com/_/nginx
 
-Configure your app service with a new Azure Storage Mount using the name of "path" & mounth path of "/var/www/app". Add an index.php at this storage path to test.
-
 Deploy locally with ``` docker-compose up ```
+
+Configure your app service with a new Azure Storage Mount using the name of "path" & mounth path of "/var/www/app". Add an index.php at this storage path to test.
 
 # General provisions before deploying on App Services
 Official Documentation: https://docs.microsoft.com/en-us/azure/app-service/configure-custom-container?pivots=container-linux
